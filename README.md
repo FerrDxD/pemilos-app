@@ -1,75 +1,42 @@
-# Nuxt Minimal Starter
+# Pemilos App - E-Voting OSIS SMAN 2 Jonggol 🗳️
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+> **Sistem Pemilihan Ketua OSIS Digital.** Aplikasi *e-voting* yang aman, cepat, dan transparan untuk mendukung proses demokrasi siswa di sekolah.
 
-## Setup
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://pemilos-app.vercel.app/)
+[![Status](https://img.shields.io/badge/Status-Active-success)]()
 
-Make sure to install dependencies:
+## 📖 Tentang Proyek
 
-```bash
-# npm
-npm install
+**Pemilos App** adalah platform pemungutan suara elektronik (*e-voting*) yang dikembangkan untuk memfasilitasi Pemilihan Ketua OSIS (Pemilos) di SMAN 2 Jonggol. Sistem ini dirancang untuk mendigitalkan proses pemungutan suara konvensional yang menggunakan kertas, sehingga proses pemilihan menjadi lebih efisien, meminimalisir kecurangan (suara ganda/rusak), dan mempercepat perhitungan suara secara aktual (*real-time*).
 
-# pnpm
-pnpm install
+🔗 **Live Demo / Portal Pemilihan:** [https://pemilos-app.vercel.app/](https://pemilos-app.vercel.app/)
 
-# yarn
-yarn install
+## ✨ Fitur Utama
 
-# bun
-bun install
-```
+- **Sistem Autentikasi Aman (Token/NISN):** Pemilih masuk menggunakan kredensial unik (seperti Token unik atau NISN) untuk memastikan prinsip satu siswa, satu suara (1 Vote per User).
+- **Profil Kandidat Komprehensif:** Menampilkan foto kandidat ketua dan wakil ketua, nomor urut, serta informasi detail mengenai Visi, Misi, dan Program Kerja mereka.
+- **Antarmuka Pemilihan Intuitif (One-Click Vote):** Proses pemilihan (*voting*) yang didesain semudah mungkin agar dapat dilakukan dengan cepat melalui perangkat *smartphone* maupun komputer/laptop.
+- **Mekanisme Konfirmasi Suara:** Sistem peringatan (*pop-up confirmation*) sebelum suara dikirim secara permanen ke *database*, untuk mencegah salah pencet.
+- **Papan Skor Real-time (Khusus Admin/Panitia):** Fitur monitoring untuk memantau progres suara yang masuk secara langsung tanpa harus menunggu penghitungan manual di akhir acara.
+- **Aksesibilitas Tinggi:** UI responsif dan dioptimalkan agar dapat berjalan ringan meskipun diakses oleh banyak siswa secara bersamaan (*concurrent users*).
 
-## Development Server
+## 🛠️ Teknologi yang Digunakan
 
-Start the development server on `http://localhost:3000`:
+*(Catatan: Sesuaikan dengan tumpukan teknologi asli yang digunakan)*
 
-```bash
-# npm
-npm run dev
+- **Frontend:** [React.js](https://reactjs.org/) / [Next.js](https://nextjs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **State Management:** [Context API / Zustand / Redux]
+- **Database & Autentikasi:** [Supabase / Firebase]
+- **Hosting / Deployment:** [Vercel](https://vercel.com/)
 
-# pnpm
-pnpm dev
+## 🚀 Cara Menjalankan Proyek (Local Development)
 
-# yarn
-yarn dev
+### Prasyarat
+Pastikan Anda telah menginstal **Node.js** dan **npm** (atau yarn) di lingkungan pengembangan Anda.
 
-# bun
-bun run dev
-```
+### Langkah Instalasi
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. **Clone repositori ini**
+   ```bash
+   git clone [https://github.com/FerrDxD/pemilos-app.git](https://github.com/FerrDxD/pemilos-app.git)
